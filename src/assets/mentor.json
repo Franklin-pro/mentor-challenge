@@ -1,0 +1,129 @@
+[
+
+  {
+    "id":1,
+    "name": " POUL KAGAME",
+    "title": " POUL KAGAME",
+    "newsImage": [
+      "https://www.goodcountry.org/images/_square/Paul-Kagame.jpg"
+    ]
+    ,
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":2,
+    "name": " Nature flowers",
+    "title": "president of Uganda",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://images.pexels.com/photos/17893690/pexels-photo-17893690/free-photo-of-carrot-flower-on-a-field.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":3,
+    "name": " alexis kay",
+    "title": " autumnal-leaves",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+
+  {
+    "id":4,
+    "name": " anould grey",
+    "title": " compress",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://images.pexels.com/photos/7605106/pexels-photo-7605106.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":5,
+    "name": "queen nessa",
+    "title": " woman-in-a-pink-dress",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://images.pexels.com/photos/20196635/pexels-photo-20196635/free-photo-of-a-woman-in-a-pink-dress-stands-in-front-of-a-tent.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":6,
+    "name": " Poul kenzie",
+    "title": " balloon-in-air",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://images.pexels.com/photos/18113451/pexels-photo-18113451/free-photo-of-hot-air-balloon-in-air.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":7,
+    "name": "kenny's gram",
+    "title": " african-man-in-sunlight",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://images.pexels.com/photos/20463326/pexels-photo-20463326/free-photo-of-portrait-of-an-african-man-in-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":8,
+    "name": "arabics",
+    "title": " best photo shoot",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://media.licdn.com/dms/image/C5603AQFweeI343X56g/profile-displayphoto-shrink_800_800/0/1517827050401?e=2147483647&v=beta&t=ajMR2hJZY68Sbv_MkVZ5UdHtviwfLvi6U-grQ-NcJwQ"
+    ]
+    ,
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":9,
+    "name": " POUL KAGAME",
+    "title": " POUL KAGAME",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://cdn09.allafrica.com/download/pic/main/main/csiid/00541569:4c53a6f25199d60e5f9057834327b30f:arc614x376:w735:us1.jpg"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id":10,
+    "name": " rolando spinner",
+    "title": " ukrainian-girl",
+    "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque numquam, ipsam quasi, ratione magnam fugiat dolore minus optio earum accusamus itaque cum debitis magni modi ad cumque quo aliquid! Sed!",
+    "newsImage": [
+      "https://images.pexels.com/photos/20297323/pexels-photo-20297323/free-photo-of-ukrainian-girl.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    ],
+    "smallImage":[
+      "https://images.pexels.com/photos/20442701/pexels-photo-20442701/free-photo-of-selective-focus-photo-of-autumnal-leaves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  }
+
+
+
+
+]
