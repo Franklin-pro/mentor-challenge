@@ -10,7 +10,6 @@
         justify-content: space-between;
         padding: 3rem;
         .image-container{
-            background-color: blue;
             display: flex;
             .image{
                 width: 500px;
@@ -22,6 +21,7 @@
                     object-fit: cover;
                 }
             }
+
             .small-image{
                 width: 100px;
                 height: 100px;
@@ -33,6 +33,11 @@
                     height: 100%;
                 }
               
+            }
+            @media screen and (max-width:485px) {
+                .small-image{
+                    display: none;
+                }
             }
             .cards{
                 position: absolute;
@@ -51,6 +56,7 @@
                 line-height: 2.8rem;
                 position: absolute;
                 top: 35%;
+                padding: 0;
                 p{
                     padding-bottom: 3rem;
                     color: rgba(0, 0, 0, 0.574);
@@ -62,13 +68,39 @@
                     }
                 }
             }
+            @media screen and (max-width:485px) {
+                .text{
+                   width: 100%;
+                }
+            }
             .date{
                 font-size: 10rem;
                 h1{
                     color: rgba(0, 0, 0, 0.106);
                 }
             }
+            @media screen and (max-width:485px) {
+                .date{
+                    font-size: 3rem;
+                }
+            }
 
+        }
+    }
+
+    @media screen and (max-width:1194px) {
+        .mentor-item{
+            flex-direction: column;
+
+            .image-container{
+                .cards{
+                    right: 10%;
+                    top: 2.7rem;
+                }
+                .small-image{
+                    right: 30%;
+                }
+            }
         }
     }
 }
