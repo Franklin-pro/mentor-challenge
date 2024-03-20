@@ -3,20 +3,19 @@ import SkipNextIcon from '@mui/icons-material/SkipNext';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import NavBar from "./navbar";
 import mentor from '../assets/mentor.json';
-// import { Image } from "antd";
 
 function Display() {
     const [filteredMentors, setFilteredMentors] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-     
-        const filtered = mentor.filter(mentorItem => {
-          
-            return mentorItem.title.includes("Developer");
-        });
+        const filtered = mentor.filter(mentorItem => mentorItem.id === currentIndex + 1);
         setFilteredMentors(filtered);
-        console.log(setFilteredMentors)
-    }, []);
+    }, [currentIndex]);
+
+    const nextMentor = () => {
+        setCurrentIndex(prevIndex => prevIndex + 1);
+    };
 
     return (
         <>
@@ -25,7 +24,9 @@ function Display() {
                 <div className="read-more">
                     {filteredMentors.length > 0 ? (
                         filteredMentors.map((mentorItem) => (
-                            <div className="mentor-item" key={mentorItem.id}>
+                          
+                         <>
+                           <div className="mentor-item" key={mentorItem.id}>
                                 <div className="image-container">
                                     <div className="image">
                                         <img src={mentorItem.newsImage} alt="home" />
@@ -44,24 +45,27 @@ function Display() {
                                     </div>
                                     <div className="text">
                                         <p>{mentorItem.description}</p>
-                                    </div>
-                                    <div className="src">
+                                        <div className="src">
                                         <a href="#" className="link">go to source</a>
                                     </div>
-                                </div>
-                                <footer>
-                                    <div className="footer-cont">
-                                        <div className="text-footer">
-                                            <h1>{mentorItem.title}</h1>
-                                            <p>{mentorItem.name}</p>
-                                        </div>
-                                        <div className="icon-footer">
-                                            <SkipPreviousIcon className="icon next" />
-                                            <SkipNextIcon className="icon pre" />
-                                        </div>
                                     </div>
-                                </footer>
+                                    
+                                </div>
+                               
                             </div>
+                             <footer>
+                             <div className="footer-cont">
+                                 <div className="text-footer">
+                                     <h1>{mentorItem.title}</h1>
+                                     <p>{mentorItem.name}</p>
+                                 </div>
+                                 <div className="icon-footer">
+                                     <SkipPreviousIcon className="icon next" onClick={() => setCurrentIndex(prevIndex => prevIndex - 1)}/>
+                                     <SkipNextIcon className="icon pre" onClick={nextMentor}/>
+                                 </div>
+                             </div>
+                         </footer>
+                         </>
                         ))
                     ) : (
                         <p>No mentors found matching the filter criteria.</p>

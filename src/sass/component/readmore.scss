@@ -1,105 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 .read-more{
+   
 
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 4rem;
-    padding: 5rem 0rem;
-    .image-container{
-  
-        display: flex;
-        img{
-            position: relative;
-        }
-        .cards{
-            background-color: rgb(255, 255, 255);
-            position: absolute;
-            right: 39%;
-            padding: 0 2rem 2rem;
-            width: fit-content;
-            h1{
-                font-size: 3.2rem;
-                width: 30%;
-                text-align: center;
-            }
-            p{
-                margin: 0 auto;
-            }
-        }
-        .small-image{
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            bottom: 20%;
-            right: 40%;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-    .description-container{
-        width: 400px;
+    .mentor-item{
        
         position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem;
+        .image-container{
+            background-color: blue;
+            display: flex;
+            .image{
+                width: 500px;
+                height: 500px;
 
-        .src{
-            position: absolute;
-            bottom: -100%;
-            .link{
-                font-size: 1.7rem;
-                text-decoration: none;
-                text-transform: capitalize;
-                color: rgba(0, 0, 0, 0.363);
-                border-bottom: 1px solid  rgba(0, 0, 0, 0.363);;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .small-image{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 80%;
+                right: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+              
+            }
+            .cards{
+                position: absolute;
+            top: 0%;
+            right: 53%;
+            padding: 3rem 1rem;
+            background-color: white;
             }
         }
-        .text{
-            line-height: 3rem;
-            font-size: 1.7rem;
+        .description-container{
+            width: 50%;
             font-family: "Noto Serif", serif;
-            color: rgba(0, 0, 0, 0.363);
-            z-index: 999;
-        }
-        .date{
-            font-size: 6rem;
-            font-family: "Noto Serif", serif;
-            position: absolute;
-            top: -65%;
-            letter-spacing: 7px;
-            color: rgba(0, 0, 0, 0.086);
+            position: relative;
+            .text{
+                font-size: 2rem;
+                line-height: 2.8rem;
+                position: absolute;
+                top: 35%;
+                p{
+                    padding-bottom: 3rem;
+                    color: rgba(0, 0, 0, 0.574);
+                }
+                .src{
+                    a{
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.341);
+                    }
+                }
+            }
+            .date{
+                font-size: 10rem;
+                h1{
+                    color: rgba(0, 0, 0, 0.106);
+                }
+            }
+
         }
     }
 }
 
 footer{
     background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.217);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.159);
     position: absolute;
     bottom: 0;
-    padding: 1rem 3rem;
     width: 100%;
-    font-family: "Noto Serif", serif;
-
     .footer-cont{
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .icon-footer{
-        font-size: 2rem;
-        display: flex;
-        align-items: center;
-        .icon{
-            font-size: 3rem;
+        padding: 1rem 3rem;
 
-        }
-        .next{
-            color: rgba(0, 0, 0, 0.275);
+        .icon-footer{
+            .icon{
+                font-size: 3rem;
+            }
+            .next{
+                color: rgba(0, 0, 0, 0.184);
+            }
         }
     }
 }
