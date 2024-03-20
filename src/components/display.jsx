@@ -6,6 +6,7 @@ import mentor from '../assets/mentor.json';
 
 function Display() {
     const [filteredMentors, setFilteredMentors] = useState([]);
+    const [nextClicked, setNextClicked] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
@@ -15,11 +16,12 @@ function Display() {
 
     const nextMentor = () => {
         setCurrentIndex(prevIndex => prevIndex + 1);
+        setNextClicked(true);
     };
 
     return (
         <>
-            <NavBar />
+            <NavBar link='stop slideshow'/>
             <div className="read-container">
                 <div className="read-more">
                     {filteredMentors.length > 0 ? (
@@ -46,7 +48,7 @@ function Display() {
                                     <div className="text">
                                         <p>{mentorItem.description}</p>
                                         <div className="src">
-                                        <a href="#" className="link">go to source</a>
+                                        <a href="exam" className="link">go to source</a>
                                     </div>
                                     </div>
                                     
@@ -60,7 +62,7 @@ function Display() {
                                      <p>{mentorItem.name}</p>
                                  </div>
                                  <div className="icon-footer">
-                                     <SkipPreviousIcon className="icon next" onClick={() => setCurrentIndex(prevIndex => prevIndex - 1)}/>
+                                 <SkipPreviousIcon className={`icon next ${nextClicked ? 'black' : 'green'}`} onClick={() => setCurrentIndex(prevIndex => prevIndex - 1)}/>
                                      <SkipNextIcon className="icon pre" onClick={nextMentor}/>
                                  </div>
                              </div>

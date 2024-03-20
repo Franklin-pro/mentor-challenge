@@ -5,7 +5,7 @@ import NavBar from '../components/navbar'
 function MentorPage(){
     return (
         <>
-        <NavBar/>
+        <NavBar link='startslideshow'/>
         <Mentor/>
      
         </>
