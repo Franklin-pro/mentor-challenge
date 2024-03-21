@@ -3,6 +3,9 @@ import SkipNextIcon from '@mui/icons-material/SkipNext';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import NavBar from "./navbar";
 import mentor from '../assets/mentor.json';
+import 'aos/dist/aos.css'
+import AOS from 'aos';
+
 
 function Display() {
     const [filteredMentors, setFilteredMentors] = useState([]);
@@ -13,6 +16,10 @@ function Display() {
         const filtered = mentor.filter(mentorItem => mentorItem.id === currentIndex + 1);
         setFilteredMentors(filtered);
     }, [currentIndex]);
+useEffect(()=>{
+    AOS.init({duration:1000})
+})
+
 
     const nextMentor = () => {
         setCurrentIndex(prevIndex => prevIndex + 1);
@@ -31,9 +38,9 @@ function Display() {
                            <div className="mentor-item" key={mentorItem.id}>
                                 <div className="image-container">
                                     <div className="image">
-                                        <img src={mentorItem.newsImage} alt="home" />
+                                        <img src={mentorItem.newsImage} alt="home" data-aos="fade-up"/>
                                     </div>
-                                    <div className="cards">
+                                    <div className="cards" data-aos="fade-left">
                                         <h1>{mentorItem.name}</h1>
                                         <p>{mentorItem.title}</p>
                                     </div>
@@ -41,7 +48,7 @@ function Display() {
                                         <img src={mentorItem.smallImage} alt="home" />
                                     </div>
                                 </div>
-                                <div className="description-container">
+                                <div className="description-container" data-aos="fade-left" data-aos-anchor-placement="center">
                                     <div className="date">
                                         <h1>1889</h1>
                                     </div>

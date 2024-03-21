@@ -1,10 +1,15 @@
 import React from "react";
 import { Image } from "antd";
 import mentor from '../assets/mentor.json';
+import AOS from 'aos';
+import { useEffect } from "react";
 
 function Mentor() {
     
-    
+    useEffect(() => {
+        const aosOptions: any = { duration: 1000 };
+        AOS.init(aosOptions);
+    }, []);
 
     return (
         <div className="mentor-container">
@@ -12,7 +17,7 @@ function Mentor() {
                 <div className="grid">
                     {mentor ? (
                         mentor.map((mentorItem, index) => (
-                            <div className="image" key={index}>
+                            <div className="image" key={index} data-aos="zoom-in">
                                 <div>
                                     {mentorItem.newsImage.map((imageUrl, imageIndex) => (
                                         <Image
@@ -21,6 +26,7 @@ function Mentor() {
                                             alt={`Gallery Image ${imageIndex}`}
                                             className={`gallery-img `}
                                             style={{ objectFit: "cover",width:'100%' }}
+                                            
                                         />
                                     ))}
                                 </div>
